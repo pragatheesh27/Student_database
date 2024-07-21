@@ -1,1 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        form {
+            border: 2px solid black;
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            text-align: left; 
+        }
+
+        .form-group {
+            
+            
+            gap: 10px;
+        }
+
+        label {
+            font-weight: bold;
+            width: 150px; 
+            text-align: right;
+        }
+
+        input[type="text"] {
+            flex-grow: 1;
+            padding: 5px;
+        }
+
+        .submit-container {
+            display: flex;
+      		padding-left:50px;
+           
+            margin-top: 10px; 
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            width: 100%;
+            max-width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <form action="/find" method="post">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter the name to search" required>
+        </div>
+        <div class="submit-container">
+            <input type="submit" value="Search">
+        </div>
+    </form>
+</body>
+</html>
 
